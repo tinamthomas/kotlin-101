@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: src/main/resources/application.yml
+  checksum: c5553a83c7764ff2d8af1cee315f13ac1553dd6536b60ba2c1ac705d39643352
+version: ""

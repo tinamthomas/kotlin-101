@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    username: postgres
+    password: mysecretpassword
+    url: jdbc:postgresql://localhost:5432/library
+  jpa:
+    hibernate:
+      dll-auto: validate
+  sql:
+    init:
+      platform: postgres
