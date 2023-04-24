@@ -21,9 +21,20 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.springframework.boot:spring-boot-starter-web:3.0.4")
 	implementation("org.eclipse.persistence:javax.persistence:2.2.1")
+	implementation("org.springframework.boot:spring-boot-starter-webflux")
 	runtimeOnly("org.postgresql:postgresql:42.5.0")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	implementation("net.java.dev.jna:jna:5.12.1")
+
+	testImplementation("net.java.dev.jna:jna-platform:5.12.1")
+
+
+
+	testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
+	testImplementation("org.testcontainers:testcontainers:1.17.6")
+	testImplementation("org.testcontainers:junit-jupiter:1.18.0")
+	testImplementation("org.testcontainers:postgresql:1.18.0")
 
 }
 
