@@ -10,4 +10,4 @@ workflows:
   checkout-build-test:
     jobs:
       - gradle/test:
-        executor: my-executor
+          executor: my-executor
