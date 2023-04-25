@@ -2,6 +2,7 @@ version: 2.1
 
 orbs:
   gradle: circleci/gradle@3.0.0
+  testcontainers-cloud-orb: atomicjar/testcontainers-cloud-orb@0.1.0
 executors:
   my-executor:
     docker:
@@ -14,3 +15,5 @@ workflows:
       - gradle/test:
           test_command: integrationTest
           executor: my-executor
+          pre-steps:
+            - tcc/setup
