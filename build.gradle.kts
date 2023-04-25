@@ -16,15 +16,15 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter")
-	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation("org.springframework.boot:spring-boot-starter:3.0.5")
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.0.5")
+	implementation("org.jetbrains.kotlin:kotlin-reflect:1.8.0")
 	implementation("org.springframework.boot:spring-boot-starter-web:3.0.4")
 	implementation("org.eclipse.persistence:javax.persistence:2.2.1")
-	implementation("org.springframework.boot:spring-boot-starter-webflux")
+	implementation("org.springframework.boot:spring-boot-starter-webflux:3.0.6")
 	runtimeOnly("org.postgresql:postgresql:42.5.0")
 
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.springframework.boot:spring-boot-starter-test:3.0.5")
 	implementation("net.java.dev.jna:jna:5.12.1")
 
 	testImplementation("net.java.dev.jna:jna-platform:5.12.1")
