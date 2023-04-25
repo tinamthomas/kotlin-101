@@ -36,6 +36,11 @@ dependencies {
 	testImplementation("org.testcontainers:junit-jupiter:1.18.0")
 	testImplementation("org.testcontainers:postgresql:1.18.0")
 
+	testImplementation("com.tngtech.archunit:archunit:1.0.1")
+	testImplementation("com.tngtech.archunit:archunit-junit5-api:1.0.0")
+	testImplementation("com.tngtech.archunit:archunit-junit5-engine:1.0.0")
+
+
 }
 
 tasks.withType<KotlinCompile> {

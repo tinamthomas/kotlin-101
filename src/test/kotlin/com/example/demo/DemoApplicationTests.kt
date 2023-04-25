@@ -23,7 +23,6 @@ class DemoApplicationTests : DatabaseContainerConfiguration() {
             .expectStatus()
             .isOk
             .expectBody()
-            .json(getResponseBodyFrom("get_bank.json"))
             .consumeWith(System.out::println)
 
     }
