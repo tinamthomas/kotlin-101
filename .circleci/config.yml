@@ -11,3 +11,6 @@ workflows:
     jobs:
       - gradle/test:
           executor: my-executor
+      - gradle/test:
+          test_command: integrationTest
+          executor: my-executor
