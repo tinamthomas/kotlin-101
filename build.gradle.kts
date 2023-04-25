@@ -53,3 +53,12 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+
+sourceSets {
+	create("integrationTest") {
+		kotlin {
+			compileClasspath += main.get().output + configurations.testRuntimeClasspath
+			runtimeClasspath += output + compileClasspath
+		}
+	}
+}
